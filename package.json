@@ -1,0 +1,19 @@
+{
+  "name": "@666kelly/my-util-functions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/666kelly/my-util-functions.git"
+  },
+  "author": "666kelly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/666kelly/my-util-functions/issues"
+  },
+  "homepage": "https://github.com/666kelly/my-util-functions#readme",
+  "description": ""
+}
