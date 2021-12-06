@@ -1,4 +1,11 @@
-//&&&&&&&&&&&&&&&&&&&&&&&&&&&&数组遍历//&&&&&&&&&&&&&&&&&&&&&&&&&&&&
-//1for
-//2forEach   callback 每次返回 underfined 值，不可链式调用。forEach() 被调用时，不会改变原数组，也就是调用它的数组
+// 使用 foreach 实现浅拷贝
 
+export const shallowCopy = (obj) => {
+  const copy = Object.create(Object.getPrototypeOf(obj));
+  const propNames = Object.getOwnPropertyNames(obj);
+  propNames.forEach((name) => {
+    const describe = Object.getOwnPropertyDescriptor(obj, name);
+    Object.defineProperty(copy, name, describe);
+  });
+  return copy;
+};
