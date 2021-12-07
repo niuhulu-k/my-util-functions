@@ -22,28 +22,3 @@ export const myForEach = function (array) {
     ++this.count;
   }, this);
 };
-
-//数组扁平化
-export const flatten = (arr) => {
-  const result = [];
-  arr.forEach((item) => {
-    if (Array.isArray(item)) result.push(...flatten(item));
-    else result.push(item);
-  });
-  return result;
-};
-
-//array.prototype.flat(n)
-export const flatDeep = (arr, d = 1) => {
-  return d > 0
-    ? arr.reduce(
-        (acc, val) =>
-          acc.concat(Array.isArray(val) ? flatDeep(val, d - 1) : val),
-        [],
-      )
-    : arr.slice();
-};
-
-//使用 foreach 扁平化
-
-export const eachFlat = (arr = [], depth = 1) => {};
