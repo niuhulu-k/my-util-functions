@@ -13,7 +13,14 @@ function App() {
 
   // const p = [22, 4, , [0, [ , 6]]];
   // console.log(arrayEvery.forFlat(p, 2));
-
+  //console.log(arrayEvery.deleteSameOne([2, 2, 2, 8, 2, 44, 22, 'eee']));
+  // console.log(
+  //   arrayEvery.deleteSame([2, 2, 2, 8, 2, 44, ';;', ';;', 22, 'eee']),
+  // );
+  // const double = (x) => x + x;
+  // const triple = (x) => 3 * x;
+  // const multiply6 = arrayEvery.pipe(double, triple);
+  // console.log(multiply6(6), '888888888');
   return (
     <div className="App">
       <header className="App-header"></header>

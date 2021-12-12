@@ -1,6 +1,6 @@
 {
   "extends": [ "prettier"],
-  "plugins": [ "import","export", "promise", "prettier"],
+  "plugins": [ "import", "promise", "prettier"],
   "rules": {
     "import/prefer-default-export": "off",
     "react/react-in-jsx-scope": "off",
