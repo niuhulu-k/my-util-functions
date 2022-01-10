@@ -104,3 +104,18 @@ export const pipe =
   (input) => {
     return functions.reduce((pre, fn) => fn(pre), input);
   };
+
+// find() 方法返回数组中满足提供的测试函数的第一个元素的值,如果数组中没有任何元素返回 true，返回 undefined。
+export const myFind = (arr) => {
+  return arr.find((element) => element > 1);
+};
+
+// findIndex() 方法返回数组中满足提供的测试函数的第一个元素的索引。如果数组中没有任何元素返回 true，则 findIndex 返回 -1。
+export const myFindIndex = (arr) => {
+  return arr.findIndex((element) => element > 1);
+};
+
+//ES6 提供三个新的方法 —— entries()，keys()和values() —— 用于遍历数组。它们都返回一个遍历器对象，可以用for...of循环进行遍历，唯一的区别是keys()是对键名的遍历、values()是对键值的遍历，entries()是对键值对的遍历
+// for (let i in array.keys()){
+//   console.log(i)
+// }
