@@ -35,3 +35,10 @@ var Peter = new Boy('Peter', 13);
 console.log(Peter.sex); // "M"
 console.log(Peter.name); // "Peter"
 console.log(Peter.age); // 13
+
+let a = [1, 2, 3];
+a.map((item, index, arr) => {
+  item = 2;
+  console.log(arr);
+  return 1;
+});
