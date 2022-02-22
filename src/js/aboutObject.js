@@ -12,3 +12,6 @@ export const _new = () => {
   }
   return obj;
 };
+
+// 使用call/apply将arguments转换为数组, 返回结果为数组，arguments自身不会改变
+var arg = [].slice.call(arguments);
