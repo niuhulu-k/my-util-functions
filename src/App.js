@@ -1,4 +1,5 @@
-import { arrayEvery } from './js';
+// import { arrayEvery } from './js';
+import { deepCopy } from './myjs';
 
 function App() {
   // function Counter() {
@@ -21,6 +22,11 @@ function App() {
   // const triple = (x) => 3 * x;
   // const multiply6 = arrayEvery.pipe(double, triple);
   // console.log(multiply6(6), '888888888');
+
+  const originObj = { a: 'a', b: 'b', c: [1, 2, 3], d: { dd: 'dd' } };
+  const cloneObj = deepCopy(originObj);
+  console.log(originObj, '88800000');
+  console.log(cloneObj);
   return (
     <div className="App">
       <header className="App-header"></header>
